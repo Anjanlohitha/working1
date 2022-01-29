@@ -1,0 +1,76 @@
+body
+{
+background-image: url("tourist_background_img.jfif");
+
+}
+h1
+{
+color:aqua;
+}
+h2
+{
+color:aqua;
+}
+
+h5
+{
+margin: 10;
+padding: 0;
+color:aqua;
+font-size:150;
+}
+
+h5 span
+{
+display:table-cell;
+margin: 0;
+padding:0;
+animation:animate 1s linear infinite;
+}
+h5 span:nth-child(1)
+{
+animation-delay:1s;
+}
+h5 span:nth-child(2)
+{
+animation-delay:1.25s;
+}
+h5 span:nth-child(3)
+{
+animation-delay:1.5s;
+}
+@keyframes animate
+{
+	0%,100%
+	{
+	    color: #fff;
+	    filter:blur(2px);
+	    box-shadow: 0 0 10px #00b3ff,
+	    box-shadow: 0 0 20px #00b3ff,
+	    box-shadow: 0 0 40px #00b3ff,
+	}
+	5%,95%
+	{
+	    color: orange;
+	    filter: blur(0px);
+	    text-shadow:0 0 10px none;
+	}
+}
+
+
+.button1{
+border:none;
+background-color:white;
+text-decoration:none;
+display:inline-block;
+transition-duration:0.4s;
+cursor:pointer;
+}
+.button2{
+border:none;
+background-color:white;
+text-decoration:none;
+display:inline-block;
+transition-duration:0.4s;
+cursor:pointer;
+}
